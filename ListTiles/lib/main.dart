@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+
+import 'home.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "ListView Dynamic",
+      home: Home(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          primarySwatch: Colors.brown,
+          textTheme: TextTheme(
+              displayLarge: TextStyle(
+                  fontFamily: 'Font1',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20),
+              titleMedium: TextStyle(
+                  fontFamily: 'Font1',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20))),
+    );
+  }
+}
