@@ -102,7 +102,7 @@ class _CalculatorState extends State<Calculator> {
           if (text == "AC") {
             calcValue = "";
             result = "";
-          } else if (text == "C") {
+          } else if (text == "CC") {
             calcValue = calcValue.isNotEmpty
                 ? calcValue.substring(0, calcValue.length - 1)
                 : "";
